@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- import css from tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .grind_single_item{
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: azure;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="h-screen">
+    <div class="w-12/12 lg:w-8/12  mx-auto flex lg:mt-20 lg:rounded-lg item-center justify-center bg-teal-600 py-10 lg:py-20">
+        <input id="search_value" class="border-2 border-blue-300 w-9/12 p-2 m-0" type="text" name="search" id="search" placeholder="Write a player name">
+        <input onclick="submitBtn()" id="searchBtn" class="bg-red-400 text-white w-1/12 text-1xl lg:text-2xl p-1 w-2/12 uppercase" type="button" value="search">
+    </div>
+    <div class="w-10/12 mx-auto mt-20 rounded-lg bg-red-400 p-10">
+        <div id="grid_warper" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+    <footer class="bg-teal-600 text-white flex justify-center items-center mt-10">This site created by Imran | Copyright © 2023 Detective SEO</footer>
+</body>
+</html>
